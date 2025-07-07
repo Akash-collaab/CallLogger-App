@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/mainLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" tools:context=".MainActivity">
+    <!--   OwnMobileNumber Input Section   -->
+    <LinearLayout android:id="@+id/ownNumberLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="16dp" android:visibility="visible">
+        <EditText android:id="@+id/editOwnMobile" android:layout_width="0dp" android:layout_height="56dp" android:layout_weight="1" android:hint="Enter your mobile number" android:inputType="phone"/>
+        <Button android:id="@+id/btnSaveNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save"/>
+    </LinearLayout>
+    <!--   RecyclerView for call logs   -->
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/callLogRecyclerView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="16dp"/>
+    <TextView android:id="@+id/versionText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:text="v20250704.0930" android:textColor="#999999" android:textSize="12sp" android:paddingBottom="8dp" android:layout_marginTop="4dp"/>
+</LinearLayout>
